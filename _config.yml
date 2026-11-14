@@ -1,0 +1,8 @@
+# Configurazione per GitHub Pages.
+# Il sito è HTML puro: questi file servono solo a chi lavora sul progetto
+# e NON devono essere pubblicati online.
+exclude:
+  - docs
+  - claude-project
+  - CLAUDE.md
+  - README.md

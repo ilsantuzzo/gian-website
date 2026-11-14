@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- STAGING: riga da rimuovere al go-live (vedi docs/04-go-live-dominio.md) -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Holon — Gianluca Craca</title>
+  <meta name="description" content="Holon — opere di Gianluca Craca.">
+  <meta name="author" content="Gianluca Craca">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Holon — Gianluca Craca">
+  <meta property="og:description" content="Holon — opere di Gianluca Craca.">
+  <meta property="og:image" content="assets/img/morphe-01.jpg">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <div class="layout">
+    <header class="sidebar">
+      <a class="site-name" href="index.html">Gianluca<br>Craca</a>
+      <nav class="nav" aria-label="Principale">
+        <ul>
+          <li><a href="index.html">Yatha</a></li>
+          <li><a href="morphe.html">Morphē</a></li>
+          <li><a href="holon.html" aria-current="page">Holon</a></li>
+          <li><a href="bio.html">Bio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <main id="contenuto" class="content">
+        <header class="series-head">
+          <h1>Holon</h1>
+        </header>
+
+        <!-- Opere della serie: per aggiungerne una copia un blocco <li> -->
+        <ul class="gallery">
+          <li class="reveal">
+            <figure class="work">
+              <button type="button" data-lightbox aria-label="Ingrandisci: Holon — Geografia, installazione su tela di grande formato">
+                <picture>
+                  <source srcset="assets/img/holon-geografia.avif" type="image/avif">
+                  <img src="assets/img/holon-geografia.jpg" alt="Holon — Geografia, installazione su tela di grande formato" width="995" height="1096" fetchpriority="high" decoding="async">
+                </picture>
+              </button>
+              <figcaption>Geografia</figcaption>
+            </figure>
+          </li>
+
+          <li class="reveal">
+            <figure class="work">
+              <button type="button" data-lightbox aria-label="Ingrandisci: Holon — Geografia, dettaglio della superficie">
+                <picture>
+                  <source srcset="assets/img/holon-geografia-dettaglio.avif" type="image/avif">
+                  <img src="assets/img/holon-geografia-dettaglio.jpg" alt="Holon — Geografia, dettaglio della superficie" width="1000" height="1215" loading="lazy" decoding="async">
+                </picture>
+              </button>
+              <figcaption>Geografia, dettaglio</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </main>
+
+      <footer class="footer">
+        © <span data-year>2026</span> by Gianluca Craca
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

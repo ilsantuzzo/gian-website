@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- STAGING: riga da rimuovere al go-live (vedi docs/04-go-live-dominio.md) -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Bio — Gianluca Craca</title>
+  <meta name="description" content="Bio e contatti di Gianluca Craca. artista. Disciplina dell'attenzione applicata alla materia.">
+  <meta name="author" content="Gianluca Craca">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bio — Gianluca Craca">
+  <meta property="og:description" content="Bio e contatti di Gianluca Craca. artista. Disciplina dell'attenzione applicata alla materia.">
+  <meta property="og:image" content="assets/img/morphe-01.jpg">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <div class="layout">
+    <header class="sidebar">
+      <a class="site-name" href="index.html">Gianluca<br>Craca</a>
+      <nav class="nav" aria-label="Principale">
+        <ul>
+          <li><a href="index.html">Yatha</a></li>
+          <li><a href="morphe.html">Morphē</a></li>
+          <li><a href="holon.html">Holon</a></li>
+          <li><a href="bio.html" aria-current="page">Bio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <main id="contenuto" class="content">
+        <article class="bio">
+          <h1 class="reveal">Disciplina dell&#39;attenzione applicata alla materia.</h1>
+          <div lang="en">
+            <p class="reveal">My practice begins with attention: a sustained physical encounter with matter.</p>
+            <p class="reveal">Through contact, repetition and resistance, I explore the shifting distance between perception and form, presence and absence, control and surrender.</p>
+            <p class="reveal">The body becomes both instrument and measure, while matter remains an active participant in the process.</p>
+            <p class="reveal">Each work emerges from this encounter, somewhere between intention and discovery.</p>
+          </div>
+        </article>
+
+        <section class="contact" aria-labelledby="contatti">
+          <h2 id="contatti" class="visually-hidden">Contatti</h2>
+          <p class="contact-mail reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.2" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14"/><path d="M2.5 5.5l9.5 7.5 9.5-7.5"/></svg>
+            <a href="mailto:gianluca.craca@gmail.com">gianluca.craca@gmail.com</a>
+          </p>
+
+          <!-- Per ricevere i messaggi senza aprire la posta: aggiungi action="URL-del-servizio" e method="POST" (vedi README.md) -->
+          <form class="form reveal" data-mailto="gianluca.craca@gmail.com">
+            <h2>Contact form:</h2>
+            <div class="field">
+              <label for="f-nome">Nome *</label>
+              <input id="f-nome" name="nome" type="text" placeholder="Inserisci il tuo nome" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email *</label>
+              <input id="f-email" name="email" type="email" placeholder="Inserisci la tua email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="f-oggetto">Oggetto *</label>
+              <input id="f-oggetto" name="oggetto" type="text" placeholder="Inserisci l&#39;oggetto" required>
+            </div>
+            <div class="field">
+              <label for="f-messaggio">Messaggio *</label>
+              <textarea id="f-messaggio" name="messaggio" placeholder="Inserisci il tuo messaggio qui" required></textarea>
+            </div>
+            <div class="form-actions">
+              <p class="form-note">* campi obbligatori</p>
+              <button class="btn" type="submit">Invia</button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        © <span data-year>2026</span> by Gianluca Craca
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

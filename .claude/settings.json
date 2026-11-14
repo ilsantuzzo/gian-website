@@ -1,0 +1,6 @@
+{
+  "permissions": {
+    "additionalDirectories": ["../../projects/gian-website"],
+    "allow": ["Read(../../projects/gian-website/**)"]
+  }
+}
