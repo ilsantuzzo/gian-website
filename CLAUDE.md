@@ -1,3 +1,5 @@
+> Working with the artist? Read and follow docs/istruzioni-claude-gianluca.md first.
+
 # gian-website
 
 Static portfolio site of an artist, published with GitHub Pages. Two kinds of people work on this repository:
