@@ -14,8 +14,8 @@
   <meta property="og:image" content="assets/img/morphe-01.jpg">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
-  <script src="assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
+  <script src="assets/js/main.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -52,11 +52,16 @@
           </p>
 
           <!-- Per ricevere i messaggi senza aprire la posta: aggiungi action="URL-del-servizio" e method="POST" (vedi README.md) -->
-          <form class="form reveal" data-mailto="gianluca.craca@gmail.com">
+          <form class="form reveal" action="https://api.web3forms.com/submit" method="POST" data-web3forms>
             <h2>Contact form:</h2>
+            <!-- Web3Forms: la chiave è pubblica per natura, serve solo a inviare i messaggi all'artista -->
+            <input type="hidden" name="access_key" value="7dbaf2eb-f4ab-49ab-8935-0192ac8313fe">
+            <input type="hidden" name="from_name" value="Sito Gianluca Craca">
+            <input type="hidden" name="subject" value="Nuovo messaggio dal sito">
+            <input type="checkbox" name="botcheck" hidden tabindex="-1" autocomplete="off">
             <div class="field">
               <label for="f-nome">Nome *</label>
-              <input id="f-nome" name="nome" type="text" placeholder="Inserisci il tuo nome" autocomplete="name" required>
+              <input id="f-nome" name="Nome" type="text" placeholder="Inserisci il tuo nome" autocomplete="name" required>
             </div>
             <div class="field">
               <label for="f-email">Email *</label>
@@ -64,16 +69,17 @@
             </div>
             <div class="field">
               <label for="f-oggetto">Oggetto *</label>
-              <input id="f-oggetto" name="oggetto" type="text" placeholder="Inserisci l&#39;oggetto" required>
+              <input id="f-oggetto" name="Oggetto" type="text" placeholder="Inserisci l&#39;oggetto" required>
             </div>
             <div class="field">
               <label for="f-messaggio">Messaggio *</label>
-              <textarea id="f-messaggio" name="messaggio" placeholder="Inserisci il tuo messaggio qui" required></textarea>
+              <textarea id="f-messaggio" name="Messaggio" placeholder="Inserisci il tuo messaggio qui" required></textarea>
             </div>
             <div class="form-actions">
               <p class="form-note">* campi obbligatori</p>
               <button class="btn" type="submit">Invia</button>
             </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </section>
       </main>

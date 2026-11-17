@@ -40,7 +40,7 @@ CLAUDE.md         Rules for Claude working on this repository
 Fade-in of the home statements and of the works on scroll, fade between pages, lightbox (click a work; arrows, keyboard, swipe; Esc to close). All disabled under "reduce motion".
 
 ## Contact form
-GitHub Pages cannot receive forms: for now "Invia" opens the visitor's mail client with the message ready. To receive messages directly, create a free Formspree form and add `action="https://formspree.io/f/XXXX" method="POST"` to the `<form>` in `bio.html`.
+Contact form: sent through Web3Forms (free plan, 250 submissions/month) straight to the artist's inbox. The `access_key` in `bio.html` is public by design; the Web3Forms account belongs to the artist.
 
 ## Local preview
 Double-click `index.html`, or run `python3 -m http.server 8000` and open http://localhost:8000.

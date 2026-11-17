@@ -138,19 +138,39 @@
   }
 
   /* 4. Modulo contatti -------------------------------------- */
-  // Sito statico: il modulo prepara una email nel programma di posta del visitatore.
-  // Per ricevere i messaggi direttamente (senza aprire la posta) basta collegare
-  // un servizio come Formspree o Netlify Forms: vedi README.md.
-  var form = document.querySelector("form[data-mailto]");
-  if (form && !form.getAttribute("action")) {
+  // I messaggi arrivano nella casella dell'artista tramite Web3Forms (servizio gratuito).
+  // Senza JavaScript il modulo funziona lo stesso (pagina di conferma di Web3Forms).
+  var form = document.querySelector("form[data-web3forms]");
+  if (form && window.fetch) {
+    var status = form.querySelector(".form-status");
+    var btn = form.querySelector("button[type=submit]");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!form.reportValidity()) return;
-      var d = new FormData(form);
-      var body = d.get("messaggio") + "\n\n— " + d.get("nome") + " (" + d.get("email") + ")";
-      location.href = "mailto:" + form.getAttribute("data-mailto") +
-        "?subject=" + encodeURIComponent(d.get("oggetto")) +
-        "&body=" + encodeURIComponent(body);
+      var data = {};
+      new FormData(form).forEach(function (v, k) { data[k] = v; });
+      data.subject = "Sito — " + data.Oggetto;
+      btn.disabled = true;
+      btn.textContent = "Invio…";
+      status.textContent = "";
+      fetch(form.action, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(data)
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (res) {
+          if (!res.success) throw new Error(res.message || (res.body && res.body.message));
+          form.reset();
+          status.textContent = "Grazie, il messaggio è stato inviato.";
+        })
+        .catch(function () {
+          status.textContent = "Invio non riuscito. Riprova più tardi o scrivi all'indirizzo email qui sopra.";
+        })
+        .then(function () {
+          btn.disabled = false;
+          btn.textContent = "Invia";
+        });
     });
   }
 

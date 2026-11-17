@@ -68,4 +68,4 @@ Rimettere su Aruba i record dello screenshot fatto al punto C.3: entro poco il d
 
 ## Dopo il go-live
 - Google Search Console (facoltativo, consigliato): aggiungere la proprietà `gianlucacraca.com`, verificarla con un record TXT su Aruba, inviare `sitemap.xml`.
-- Modulo contatti: GitHub Pages non riceve moduli. Oggi "Invia" apre la posta del visitatore. Per riceverli direttamente creare un modulo gratuito su **Formspree** e chiedere a Claude di collegarlo (aggiunge `action` e `method="POST"` al form).
+- Modulo contatti: già collegato a Web3Forms (i messaggi arrivano direttamente nella casella di Gianluca). Dopo il passaggio al dominio fare un invio di prova dal sito online.

@@ -31,10 +31,10 @@ Reply in Italian. With the artist, explain in plain language, one step at a time
 index.html      Yatha — home with the five statements (lang="en")
 morphe.html     Morphē — series of works
 holon.html      Holon — series of works
-bio.html        Bio + email + contact form (mailto)
+bio.html        Bio + email + contact form (Web3Forms: messages go straight to the artist's inbox)
 404.html        not found page
 assets/css/style.css   single stylesheet; variables in :root
-assets/js/main.js      scroll reveal, page fade, lightbox, mailto form
+assets/js/main.js      scroll reveal, page fade, lightbox, contact form (fetch to Web3Forms)
 assets/img/            works: name.avif + name.jpg
 _config.yml     excludes docs/, claude-project/, CLAUDE.md, README.md from publication
 ```
