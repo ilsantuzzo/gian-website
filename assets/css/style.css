@@ -178,8 +178,9 @@ a { color: inherit; text-decoration: none; }
   max-width: 560px;
   margin: 0 auto 4rem;
   font-size: .85rem;
-  color: #767676;          /* grigio leggibile (contrasto AA) */
+  color: var(--muted);     /* stesso grigio chiaro delle voci di menu */
   letter-spacing: .02em;
+  text-align: center;
 }
 
 /* ---------- Bio ---------- */

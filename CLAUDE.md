@@ -75,6 +75,7 @@ Until go-live every page contains `<meta name="robots" content="noindex, nofollo
 1. Small, targeted changes; never reformat whole files.
 2. Relative paths only (`assets/…`, `morphe.html`), never a leading `/`: in staging the site lives in a sub-folder of github.io.
 3. After a change: explain it in 1–3 lines and suggest the commit message.
+4. When you change `assets/css/style.css` (or `main.js`), bump the `?v=N` on its link in **all** HTML pages, 404.html included: otherwise browsers keep the old cached file.
 
 ## Ask for confirmation before
 - deleting files or pages;
