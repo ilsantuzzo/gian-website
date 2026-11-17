@@ -173,6 +173,15 @@ a { color: inherit; text-decoration: none; }
 }
 .work figcaption:empty { display: none; }
 
+/* Nota sulla tecnica, in fondo a ogni serie */
+.series-note {
+  max-width: 560px;
+  margin: 0 auto 4rem;
+  font-size: .85rem;
+  color: #767676;          /* grigio leggibile (contrasto AA) */
+  letter-spacing: .02em;
+}
+
 /* ---------- Bio ---------- */
 
 .bio {
