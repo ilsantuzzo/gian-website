@@ -151,7 +151,7 @@
       new FormData(form).forEach(function (v, k) { data[k] = v; });
       data.subject = "Sito — " + data.Oggetto;
       btn.disabled = true;
-      btn.textContent = "Invio…";
+      btn.textContent = "Sending…";
       status.textContent = "";
       fetch(form.action, {
         method: "POST",
@@ -162,14 +162,14 @@
         .then(function (res) {
           if (!res.success) throw new Error(res.message || (res.body && res.body.message));
           form.reset();
-          status.textContent = "Grazie, il messaggio è stato inviato.";
+          status.textContent = "Thank you, your message has been sent.";
         })
         .catch(function () {
-          status.textContent = "Invio non riuscito. Riprova più tardi o scrivi all'indirizzo email qui sopra.";
+          status.textContent = "Sending failed. Please try again later or write to the email address above.";
         })
         .then(function () {
           btn.disabled = false;
-          btn.textContent = "Invia";
+          btn.textContent = "Send";
         });
     });
   }

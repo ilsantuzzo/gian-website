@@ -15,7 +15,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css?v=5">
-  <script src="assets/js/main.js?v=2" defer></script>
+  <script src="assets/js/main.js?v=3" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
@@ -55,7 +55,7 @@
             </a>
           </div>
 
-          <form class="form reveal" action="https://api.web3forms.com/submit" method="POST" data-web3forms>
+          <form class="form reveal" action="https://api.web3forms.com/submit" method="POST" data-web3forms lang="en">
             <h2>Contact form:</h2>
             <!-- Web3Forms: la chiave è pubblica per natura, serve solo a inviare i messaggi all'artista -->
             <input type="hidden" name="access_key" value="7dbaf2eb-f4ab-49ab-8935-0192ac8313fe">
@@ -63,24 +63,24 @@
             <input type="hidden" name="subject" value="Nuovo messaggio dal sito">
             <input type="checkbox" name="botcheck" hidden tabindex="-1" autocomplete="off">
             <div class="field">
-              <label for="f-nome">Nome *</label>
-              <input id="f-nome" name="Nome" type="text" placeholder="Inserisci il tuo nome" autocomplete="name" required>
+              <label for="f-nome">Name *</label>
+              <input id="f-nome" name="Nome" type="text" placeholder="Enter your name" autocomplete="name" required>
             </div>
             <div class="field">
               <label for="f-email">Email *</label>
-              <input id="f-email" name="email" type="email" placeholder="Inserisci la tua email" autocomplete="email" required>
+              <input id="f-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
             </div>
             <div class="field">
-              <label for="f-oggetto">Oggetto *</label>
-              <input id="f-oggetto" name="Oggetto" type="text" placeholder="Inserisci l&#39;oggetto" required>
+              <label for="f-oggetto">Subject *</label>
+              <input id="f-oggetto" name="Oggetto" type="text" placeholder="Enter the subject" required>
             </div>
             <div class="field">
-              <label for="f-messaggio">Messaggio *</label>
-              <textarea id="f-messaggio" name="Messaggio" placeholder="Inserisci il tuo messaggio qui" required></textarea>
+              <label for="f-messaggio">Message *</label>
+              <textarea id="f-messaggio" name="Messaggio" placeholder="Write your message here" required></textarea>
             </div>
             <div class="form-actions">
-              <p class="form-note">* campi obbligatori</p>
-              <button class="btn" type="submit">Invia</button>
+              <p class="form-note">* required fields</p>
+              <button class="btn" type="submit">Send</button>
             </div>
             <p class="form-status" role="status" aria-live="polite"></p>
           </form>
